@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>dynamic table</title>
+	<style>
+		table, th, td {
+			border: 1px solid tomato;
+			border-collapse: collapse;
+			padding: 10px;
+			font-size: 16px;
+			font-family: sans-serif;
+
+		}
+		input {
+			display: block;
+			padding: 10px;
+			margin: 10px;
+		}
+		button {
+			background: salmon;
+			color: white;
+			width: 200px;
+			height: 50px;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<table id="table">
+		<tr>
+			<th>name</th>
+			<th>email</th>
+		</tr>
+		<tr>
+			<td>jh</td>
+			<td>jh@gmail.com</td>
+		</tr>
+	</table>
+	<input type="text" id="name" placeholder="enter your name"> 
+	<input type="text" id="email" placeholder="enter your email">
+	<button onclick="addData()">add Table Data</button>
+	<script src="script.js"></script>
+</body>
+</html>
